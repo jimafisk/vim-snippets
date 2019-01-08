@@ -56,8 +56,7 @@ snippet hook_block_view_alter "Alter the result of \Drupal\Core\Block\BlockBase:
 /**
  * Implements hook_block_view_alter().
  */
-function ${hook}_block_view_alter(&$$build
- $$block) {
+function ${hook}_block_view_alter(&${$build}, ${$block}) {
   $
 }
 endsnippet
@@ -66,8 +65,7 @@ snippet hook_block_view_BASE_BLOCK_ID_alter "Provide a block plugin specific blo
 /**
  * Implements hook_block_view_BASE_BLOCK_ID_alter().
  */
-function ${hook}_block_view_BASE_BLOCK_ID_alter(&$$build
- $$block) {
+function ${hook}_block_view_{BASE_BLOCK_ID}_alter(&${$build}, ${$block}) {
   $
 }
 endsnippet
@@ -85,8 +83,7 @@ snippet hook_ckeditor_css_alter "Modify the list of CSS files that will be added
 /**
  * Implements hook_ckeditor_css_alter().
  */
-function ${hook}_ckeditor_css_alter(&$$css
- $$editor) {
+function ${hook}_ckeditor_css_alter(&${$css}, ${$editor}) {
   $
 }
 endsnippet
@@ -95,7 +92,7 @@ snippet hook_ckeditor_plugin_info_alter "Modify the list of available CKEditor p
 /**
  * Implements hook_ckeditor_plugin_info_alter().
  */
-function ${hook}_ckeditor_plugin_info_alter(&$$plugins) {
+function ${hook}_ckeditor_plugin_info_alter(&${$plugins}) {
   $
 }
 endsnippet
@@ -104,9 +101,7 @@ snippet hook_comment_links_alter "Alter the links of a comment." b
 /**
  * Implements hook_comment_links_alter().
  */
-function ${hook}_comment_links_alter(&$$links
- $$entity
- &$$context) {
+function ${hook}_comment_links_alter(&${$links}, ${$entity}, &${$context}) {
   $
 }
 endsnippet
@@ -115,8 +110,7 @@ snippet hook_config_import_steps_alter "Alter the configuration synchronization 
 /**
  * Implements hook_config_import_steps_alter().
  */
-function ${hook}_config_import_steps_alter(&$$sync_steps
- $$config_importer) {
+function ${hook}_config_import_steps_alter(&${$sync_steps}, ${$config_importer}) {
   $
 }
 endsnippet
@@ -125,7 +119,7 @@ snippet hook_config_schema_info_alter "Alter config typed data definitions." b
 /**
  * Implements hook_config_schema_info_alter().
  */
-function ${hook}_config_schema_info_alter(&$$definitions) {
+function ${hook}_config_schema_info_alter(&${$definitions}) {
   $
 }
 endsnippet
@@ -134,7 +128,7 @@ snippet hook_config_translation_info "Introduce dynamic translation tabs for tra
 /**
  * Implements hook_config_translation_info().
  */
-function ${hook}_config_translation_info(&$$info) {
+function ${hook}_config_translation_info(&${$info}) {
   $
 }
 endsnippet
@@ -143,7 +137,7 @@ snippet hook_config_translation_info_alter "Alter existing translation tabs for 
 /**
  * Implements hook_config_translation_info_alter().
  */
-function ${hook}_config_translation_info_alter(&$$info) {
+function ${hook}_config_translation_info_alter(&${$info}) {
   $
 }
 endsnippet
@@ -152,9 +146,7 @@ snippet hook_contextual_links_alter "Alter contextual links before they are rend
 /**
  * Implements hook_contextual_links_alter().
  */
-function ${hook}_contextual_links_alter(&$$links
- $$group
- $$route_parameters) {
+function ${hook}_contextual_links_alter(&${$links}, ${$group}, ${$route_parameters}) {
   $
 }
 endsnippet
@@ -163,7 +155,7 @@ snippet hook_contextual_links_plugins_alter "Alter the plugin definition of cont
 /**
  * Implements hook_contextual_links_plugins_alter().
  */
-function ${hook}_contextual_links_plugins_alter(&$$contextual_links) {
+function ${hook}_contextual_links_plugins_alter(&${$contextual_links}) {
   $
 }
 endsnippet
