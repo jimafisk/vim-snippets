@@ -2,8 +2,8 @@ snippet hook_ajax_render_alter "Alter the Ajax command data that is sent to the 
 /**
  * Implements hook_ajax_render_alter().
  */
-function hook_ajax_render_alter(&$$data) {
-  $1
+function ${1:hook}_ajax_render_alter(&${2:$data}) {
+  $3
 }
 endsnippet
 
@@ -11,8 +11,8 @@ snippet hook_archiver_info_alter "Alter archiver information declared by other m
 /**
  * Implements hook_archiver_info_alter().
  */
-function hook_archiver_info_alter(&$$info) {
-  $1
+function ${1:hook}_archiver_info_alter(&${2:$info}) {
+  $3
 }
 endsnippet
 
@@ -20,8 +20,8 @@ snippet hook_batch_alter "Alter batch information before a batch is processed." 
 /**
  * Implements hook_batch_alter().
  */
-function hook_batch_alter(&$$batch) {
-  $1
+function ${1:hook}_batch_alter(&${2:$batch}) {
+  $3
 }
 endsnippet
 
@@ -29,10 +29,8 @@ snippet hook_block_access "Control access to a block instance." b
 /**
  * Implements hook_block_access().
  */
-function hook_block_access($$block
- $$operation
- $$account) {
-  $1
+function ${1:hook}_block_access(${2:$block}, ${3:$operation}, ${4:$account}) {
+  $5
 }
 endsnippet
 
@@ -40,9 +38,8 @@ snippet hook_block_build_alter "Alter the result of \Drupal\Core\Block\BlockBase
 /**
  * Implements hook_block_build_alter().
  */
-function hook_block_build_alter(&$$build
- $$block) {
-  $1
+function ${1:hook}_block_build_alter(&${2:$build}, ${3:$block}) {
+  $4
 }
 endsnippet
 
@@ -50,9 +47,8 @@ snippet hook_block_build_BASE_BLOCK_ID_alter "Provide a block plugin specific bl
 /**
  * Implements hook_block_build_BASE_BLOCK_ID_alter().
  */
-function hook_block_build_BASE_BLOCK_ID_alter(&$$build
- $$block) {
-  $1
+function ${1:hook}_block_build_${2:BASE_BLOCK_ID}_alter(&${3:$build}, ${4:$block}) {
+  $5
 }
 endsnippet
 
