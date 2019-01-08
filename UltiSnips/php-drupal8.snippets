@@ -1307,8 +1307,7 @@ snippet hook_mail "Prepares a message based on parameters;"
 /**
  * Implements hook_mail().
  */
-function ${hook}_mail(${$key}
- &${$message}, ${$params}) {
+function ${hook}_mail(${$key}, &${$message}, ${$params}) {
   $
 }
 endsnippet
@@ -2372,8 +2371,7 @@ snippet hook_views_pre_view "Alter a view at the very beginning of Views process
 /**
  * Implements hook_views_pre_view().
  */
-function ${hook}_views_pre_view(${$view}, ${$display_id}
- &${$args}) {
+function ${hook}_views_pre_view(${$view}, ${$display_id}, &${$args}) {
   $
 }
 endsnippet
